@@ -2,15 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg-creme: #f8fafc;
-  --pastel-blue: #e0f2fe;
-  --pastel-green: #dcfce7;
-  --text-main: #1e293b;
-}
-
 body {
-  background-color: var(--bg-creme);
-  color: var(--text-main);
-  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc; /* Il grigio pastello chiarissimo */
+  color: #1e293b;
+  overflow-x: hidden;
 }
