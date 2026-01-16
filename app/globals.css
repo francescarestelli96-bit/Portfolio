@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --bg-creme: #f8fafc;
+  --pastel-blue: #e0f2fe;
+  --pastel-green: #dcfce7;
+  --text-main: #1e293b;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  background-color: var(--bg-creme);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
 }
