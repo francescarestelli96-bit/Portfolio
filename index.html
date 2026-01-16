@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Francesca | Dev & Biker</title>
+    <style>
+        /* CSS SEMPLIFICATO */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #111; color: white; text-align: center; }
+        header { padding: 50px 20px; background: linear-gradient(45deg, #6c5ce7, #e74c3c); }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        .card { background: #222; border-radius: 15px; padding: 20px; border: 1px solid #333; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: #6c5ce7; }
+        .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #6c5ce7; color: white; text-decoration: none; border-radius: 5px; }
+        .biker-link { color: #e74c3c; font-weight: bold; text-decoration: none; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Francesca Restelli</h1>
+        <p>Web Developer | Ex-HR | Bikerfluencer</p>
+        <a href="https://www.instagram.com/francescarestelli_webiker/" class="biker-link">@francescarestelli_webiker 🏍️</a>
+    </header>
+
+    <div class="container">
+        <h2>I Miei Progetti</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Ridescape</h3>
+                <p>La mia piattaforma per biker.</p>
+                <a href="#" class="btn">Visita</a>
+            </div>
+            <div class="card">
+                <h3>Alberto Chines</h3>
+                <p>Sito per pianista internazionale.</p>
+                <a href="https://albertochines-site.vercel.app/" class="btn">Visita</a>
+            </div>
+            <div class="card">
+                <h3>Xmas for Dave</h3>
+                <p>Progetto creativo e personale.</p>
+                <a href="#" class="btn">Visita</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
