@@ -1,15 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --bg-creme: #f8fafc;
+@theme {
+  --font-syne: var(--font-syne);
+  --font-inter: var(--font-inter);
 }
 
 body {
-  background-color: var(--bg-creme);
+  background-color: #f8fafc;
   color: #1e293b;
-  -webkit-font-smoothing: antialiased;
   margin: 0;
-  padding: 0;
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fix per i bordi arrotondati che vedi male */
+* {
+  border-color: #e2e8f0;
 }
