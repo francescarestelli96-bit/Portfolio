@@ -1,26 +1,35 @@
-{
-  "name": "portfolio-francesca",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "14.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "lucide-react": "0.322.0"
-  },
-  "devDependencies": {
-    "typescript": "5.3.3",
-    "@types/node": "20.11.10",
-    "@types/react": "18.2.55",
-    "@types/react-dom": "18.2.19",
-    "autoprefixer": "10.4.17",
-    "postcss": "8.4.35",
-    "tailwindcss": "3.4.1"
-  }
+'use client';
+
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-[#050505] flex flex-col justify-center px-[8%]">
+      <div className="space-y-4">
+        <p className="text-gray-500 tracking-[0.4em] text-xs uppercase">
+          Fullstack Developer & Biker
+        </p>
+        
+        <h1 className="text-6xl md:text-9xl font-extrabold uppercase leading-none">
+          Francesca<br />
+          <span className="text-indigo-500">
+            Restelli.
+          </span>
+        </h1>
+
+        <div className="flex gap-8 pt-8">
+          <Link href="/works" className="text-white border-b-2 border-white pb-1">
+            Works
+          </Link>
+          <a 
+            href="https://www.instagram.com/francescarestelli_webiker/" 
+            target="_blank" 
+            className="text-red-500 font-bold"
+          >
+            Instagram
+          </a>
+        </div>
+      </div>
+    </main>
+  );
 }
