@@ -5,12 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        syne: ['var(--font-syne)'],
-        inter: ['var(--font-inter)'],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
